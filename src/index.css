@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Padauk', sans-serif;
+}
+
+#root {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#site-title > h1 {
+  margin-top: 20px;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+#site-title > h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.separator {
+  margin: auto;
+  width: 40%;
+  margin-top: 1rem;
+}
+
+#user-selection {
+  margin-top: 1rem;
+}
+
+#user-selection > label {
+  display: inline-block;
+  width: 100%;
+}
+
+#user-type {
+  margin-top: 5px;
+  height: 25px;
+  width: 250px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+#user-type:focus {
+  outline: 2px solid rgb(29, 139, 208);
+}
+
+#operator-section {
+  width: 40%;
+  margin: auto;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.input-lbl {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  cursor: text;
+}
+
+.simple-input {
+  float: right;
+  padding: 5px 5px;
+  background-color: rgb(187, 224, 251);
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bolder;
+  background-color: rgb(151, 255, 142);
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.btn:hover {
+  background-color: rgb(100, 172, 93);
+}
+
+.btn:active {
+  background-color: rgb(100, 172, 93);
+  box-shadow: 1px 1px 3px black;
+  transform: translateY(4px);
+}
+
+.operatorAction {
+  display: block;
+  width: 60%;
+  margin: auto;
+  padding: 7px 15px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#user-section {
+  width: 40%;
+  margin: auto;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.number-input {
+  text-align: center;
+  float: right;
+  padding: 5px 5px;
+  background-color: rgb(187, 224, 251);
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.info {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.red {
+  color: red;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  width: 25%;
+  margin: auto;
+  height: 10%;
+  border-radius: 3px;
+  background-color: rgb(102, 255, 138);
+}
+
+#or {
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hidden-input {
+  display: none;
+  opacity: 0;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 60%;
+  margin: auto;
+  padding: 7px 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  transition: opacity 0.1s ease;
+}
+
+@keyframes appearing {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#ticket-price {
+  text-align: center;
+  font-size: 1.1em;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#reload {
+  display: block;
+  margin: auto;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+@media (max-width: 1490px) {
+  #deploy-form {
+    text-align: left;
+  }
+
+  #connection-form {
+    text-align: left;
+  }
+
+  #operator-section {
+    margin-top: 0;
+    width: 50%;
+    text-align: right;
+  }
+
+  #user-section {
+    width: 50%;
+  }
+
+  #operations-form {
+    margin-top: 20px;
+  }
+
+  .input-lbl {
+    clear: both;
+  }
+
+  .existing {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .address > span > i {
+    display: block;
+    width: 100%;
+  }
+
+  .input-lbl {
+    line-height: 1.5;
+  }
+
+  .simple-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  * {
+    line-height: 1;
+  }
+
+  #deploy-form {
+    text-align: center;
+  }
+
+  #connection-form {
+    text-align: center;
+  }
+
+  .separator {
+    width: 100%;
+  }
+
+  .address {
+    word-wrap: break-word;
+  }
+
+  #site-title > h1 {
+    font-size: 3.5rem;
+  }
+
+  #site-title > h4 {
+    font-size: 1.2rem;
+  }
+
+  .operatorAction {
+    width: 100%;
+  }
+
+  #operator-section {
+    width: 100%;
+  }
+
+  #user-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .input-lbl {
+    font-size: 1.2rem;
+  }
+}
