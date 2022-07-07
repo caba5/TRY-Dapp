@@ -61,3 +61,4 @@ If a user wins, it will be notified by the dapp.
 ## Testing environment
 
 I've used *Metamask* wallet connected to a local *Ganache* session in order to simulate accounts and the blockchain in general.
+The application can be tested in a local environment through `npx start`.
